@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 2</title>
+</head>
+
+<body>
+    <h1> Laboratorio #2</h1>
+    <hr>
+    <hr>
+    <section>
+        <h3>Soluci&oacute;n al Problema #1</h3>
+        <p>¿Qué es Javascript y en qué se asemeja a Java?</p>
+        <textarea class="Answer" name="message" rows="5" cols="80"></textarea>
+        <br><br>
+        <input onclick="respPregunta()" type="submit" value="Respuesta">
+    </section>
+    <hr>
+    <section>
+        <h3>Soluci&oacute;n al Problema #2</h3>
+        <p>Declare dos variales para procesar</p>
+        <label for="valor1">Valor 1: </label>
+        <input id="valor1" type="number">
+        <label for="valor2">Valor 2: </label>
+        <input id="valor2" type="number">
+        <input onclick="respOperaciones()" type="submit" value="Procesar">
+        <p id="suma"></p>
+        <p id="resta"></p>
+        <p id="producto"></p>
+        <p id="division"></p>
+    </section>
+    <hr>
+    <section>
+        <h3>Soluci&oacute;n al Problema #3</h3>
+        <p>Ingrese DOS palabaras para ser concatenadas</p>
+        <label for="cadena1">Cadena 1: </label>
+        <input id="cadena1" type="text">
+        <label for="cadena2">Cadena 2: </label>
+        <input id="cadena2" type="text">
+        <input onclick="cadConcatenar()" type="submit" value="Concatenar Cadenas">
+        <p class="respCad"></p>
+    </section>
+    <hr>
+    <section>
+        <h3>Soluci&oacute;n al Problema #4</h3>
+        <p>Ingrese DOS registros para validar su tipo de datos</p>
+        <label for="cadena1">Registro 1: </label>
+        <input id="cadena1" type="text">
+        <label for="cadena2">Registro 2: </label>
+        <input id="cadena2" type="text">
+        <input onclick="typeDatos()" type="submit" value="Validar el tipo de datos">
+        <p class="tipoDato1"></p>
+        <p class="tipoDato2"></p>
+    </section>
+    <hr>
+    <section>
+        <h3>Soluci&oacute;n al Problema #5</h3>
+        <p>Creaci&oacute;n de datos tipo Objetos</p>
+        <input onclick="datosObjetos()" type="submit" value="Procesar datos Objetos">
+        <p class="obj1"></p>
+        <p class="obj2"></p>
+        <p class="obj3"></p>
+        <p class="obj4"></p>
+    </section>
+    <hr>
+    <section>
+        <h3>Soluci&oacute;n al Problema #6</h3>
+        <p>Ingrese un n&uacute;mero entero positivo para ser procesado</p>
+        <label for="valor">Registro del Valor : </label>
+        <input id="valor" type="number">
+        <input onclick="sumaValor()" type="submit" value="Procesar sumatoria">
+        <p class="sumaNumb"></p>
+    </section>
+    <hr>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
