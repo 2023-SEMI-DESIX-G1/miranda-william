@@ -4,54 +4,77 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Secuencia Fibonacci" />
+    <meta name="description" content="Implementación de buscador de Pokemon" />
     <meta name="keywords" content="HTML5, CSS, Javascript" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="WillCrack Solution Corp." />
-    <title>Laboratorio 4</title>
+    <title>Parcial 2</title>
     <!-- Icono de la página WEB -->
     <link rel="shortcut icon" type="image/x-ico" href="./dist/ico/wc.ico" />
     <!-- Custom styles for this template -->
     <link href="./dist/css/reset.css" rel="stylesheet" />
-    <link href="./dist/css/app.css" rel="stylesheet" />
+    <link href="./dist/css/style.css" rel="stylesheet" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    </style>
 </head>
 
 <body>
-    <section>
-        <h1>Fibonnacci</h1>
-    </section>
-    <section>
-        <div class="card">
-            <form id="myForma">
-                <div class="card-header">
-                    <h2>Secuencia Fibonnacci</h2>
-                </div>
-                <div class="card-body">
-                    <label for="numero" class="quantity">Cantidad de elementos: </label>
-                    <input id="numero" type="number" placeholder="Numerico" autofocus />
-                    <div class="card-footer">
-                        <button type="submit">Calcular</button>
-                    </div>
-                </div>
+    <main>
+        <section class="form-card center">
+            <form id="pokemon-finder-form" class="form-card-content" action="">
+
+                <section class="form-card-logo">
+                    <img src="assets/img/pokeapi_256.png" alt="">
+                </section>
+                <section class="form-card-title">
+                    <h1>Buscador de pokemones</h1>
+                    <p>Busca desde pokemones hasta las habilidades de los mismos.</p>
+                </section>
+                <section class="form-card-input">
+                    <section class="form-card-input-child">
+                        <section class="flex-left">
+                            <label for="query">Buscar</label>
+                        </section>
+                        <input class="input" id="pokemon-finder-input" type="text">
+                    </section>
+
+                    <section class="form-card-input-child flex-end">
+                        <section class="flex-left">
+                            <label for="option">Tipo de búsqueda</label>
+                        </section>
+                        <select class="input" id="pokemon-finder-search-type">
+                            <option value="" style="display: none;"></option>
+                            <option value="pokemon">Por pokemon</option>
+                            <option value="ability">Por habilidad</option>
+                        </select>
+                    </section>
+                </section>
+                <section class="form-card-buttons">
+                    <button class="clear-button" id="pokemon-finder-clear-button" type="button">Limpiar</button>
+                    <button type="submit">Buscar</button>
+                </section>
             </form>
-        </div>
-    </section>
-    <section>
-        <div class="card">
-            <div id="resultados"></div>
-            <script src="./dist/js/app.js"></script>
-        </div>
-    </section>
-    <footer class="wcfooter">
-        <div class="container">
-            <span class="text-muted">
-                <b>Dise&ntilde;ado por <a href="https://willcrackcorp.w3spaces.com/"
-                        title="WillCrack Solutions Corp., Panam&aacute;" target="_blank">WC Solutions Corp.</a>
-                    Copyright
-                    &copy; DS IX - 2023 | William Miranda</b>
-            </span>
-        </div>
-    </footer>
+        </section>
+        <br>
+        <br>
+        <section id="pokemon-finder-output"></section>
+        <footer class="wcfooter mt-auto">
+            <div class="inner">
+                <span class="text-muted">
+                    <b>Dise&ntilde;ado por <a href="https://willcrackcorp.w3spaces.com/"
+                            title="WillCrack Solutions Corp., Panam&aacute;" target="_blank">WC Solutions Corp.</a>
+                        Copyright
+                        &copy; DS IX - 2023 | William Miranda</b>
+                </span>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Custom script for this template -->
+    <script defer src="./dist/js/utils.js"></script>
+    <script defer src="./dist/js/index.js"></script>
 </body>
 
 </html>
