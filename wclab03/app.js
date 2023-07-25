@@ -1,4 +1,4 @@
-//* Desarrollo del Problema 1 ==========================================================================================
+//* Desarrollo del Problema 1           */================================================================================
 
 function doublePalindrome() {
     let a = parseInt(document.getElementById('problema1').value);
@@ -9,7 +9,7 @@ function doublePalindrome() {
     res.textContent = p1 == true && p2 == true ? 'Es palindromo de doble base' : 'No es Palindromo';
 }
 
-//? Desarrollo del Problema 2 ==========================================================================================
+//? Desarrollo del Problema 2           */================================================================================
 
 function count() {
     let str = document.getElementById('problema2').value;
@@ -33,7 +33,7 @@ function count() {
     res.textContent = resp;
 }
 
-//! Desarrollo del Problema 3 ==========================================================================================
+//! Desarrollo del Problema 3           */================================================================================
 
 function leap_year() {
     let year = parseInt(document.getElementById('problema3').value);
@@ -42,7 +42,7 @@ function leap_year() {
     res.textContent = year % 4 === 0 ? 'Año Bisiesto' : 'No año bisiesto';
 }
 
-//WC Desarrollo del Problema 4 =========================================================================================
+//WC Desarrollo del Problema 4          */================================================================================
 
 function add() {
     let x = document.getElementById('problema4').value;
