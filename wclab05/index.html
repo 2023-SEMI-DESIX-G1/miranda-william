@@ -4,33 +4,36 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Secuencia Fibonacci" />
+    <meta name="description" content="Captura de Notas" />
     <meta name="keywords" content="HTML5, CSS, Javascript" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="WillCrack Solution Corp." />
-    <title>Laboratorio 4</title>
+    <title>Laboratorio 5</title>
     <!-- Icono de la página WEB -->
     <link rel="shortcut icon" type="image/x-ico" href="./dist/ico/wc.ico" />
     <!-- Custom styles for this template -->
     <link href="./dist/css/reset.css" rel="stylesheet" />
     <link href="./dist/css/app.css" rel="stylesheet" />
+    <!-- Custom script for this template -->
+    <script defer src="./dist/js/app.js"></script>
 </head>
 
 <body>
     <section>
-        <h1>Fibonnacci</h1>
+        <h1>Calcular Promedio de Notas</h1>
     </section>
     <section>
         <div class="card">
-            <form id="myForma">
+            <form id="myForm">
                 <div class="card-header">
-                    <h2>Secuencia Fibonnacci</h2>
+                    <h2>Notas del Estudiante</h2>
                 </div>
                 <div class="card-body">
-                    <label for="numero" class="quantity">Cantidad de elementos: </label>
-                    <input id="numero" type="number" placeholder="Numerico" autofocus />
+                    <label for="nota" class="quantity">Ingrese la o (las) notas del estudiante: </label>
+                    <input id="nota" type="number" placeholder="Numerico" autofocus />
                     <div class="card-footer">
-                        <button type="submit">Calcular</button>
+                        <button id="calcular">Promedio</button>
+                        <button type="submit">Agregar Nota</button>
                     </div>
                 </div>
             </form>
@@ -38,8 +41,31 @@
     </section>
     <section>
         <div class="card">
-            <div id="resultados"></div>
-            <script src="./dist/js/app.js"></script>
+            <div id="notas"></div>
+        </div>
+        <div class="card">
+            <div id="promedio"></div>
+        </div>
+        <div class="card">
+            <div id="graphHorizontal" class="graphHorizontal-container">
+                <div class="barHorizontal"></div>
+                <div class="barHorizontal-label"></div>
+            </div>
+            <section class="graphVertical">
+                <div class="scale">
+                    <h2 class="level">100</h2>
+                    <h2 class="level">90</h2>
+                    <h2 class="level">80</h2>
+                    <h2 class="level">70</h2>
+                    <h2 class="level">60</h2>
+                    <h2 class="level">50</h2>
+                    <h2 class="level">40</h2>
+                    <h2 class="level">30</h2>
+                    <h2 class="level">20</h2>
+                    <h2 class="level">10</h2>
+                </div>
+                <div class="barVertical"></div>
+            </section>
         </div>
     </section>
     <footer class="wcfooter">
