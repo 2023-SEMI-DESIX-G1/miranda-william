@@ -1,4 +1,4 @@
-//* Desarrollo del Problema 1 ==========================================================================================
+//* Desarrollo del Problema 1           */================================================================================
 
 function respPregunta() {
     const Answer = document.querySelector('.Answer');
@@ -7,7 +7,7 @@ function respPregunta() {
     Answer.innerText = Texto;
 }
 
-//* Desarrollo del Problema 2 ==========================================================================================
+//* Desarrollo del Problema 2           */================================================================================
 
 function respOperaciones() {
     var valor1 = parseInt(document.getElementById('valor1').value);
@@ -33,19 +33,19 @@ function respOperaciones() {
     division.textContent = 'La Division es igual a ' + d;
 }
 
-//* Desarrollo del Problema 3 ==========================================================================================
+//* Desarrollo del Problema 3           */================================================================================
 
 function cadConcatenar() {
     const concat = document.querySelector('.respCad');
     let variable1 = document.getElementById('cadena1').value;
     let variable2 = document.getElementById('cadena2').value;
-    var resultado = `${variable1}${variable2}`;
+    var resultado = `${variable1} - ${variable2}`;
 
     console.log(resultado);
     concat.innerText = 'El resultado de las dos cadenas es: ' + resultado;
 }
 
-//* Desarrollo del Problema 4 ==========================================================================================
+//* Desarrollo del Problema 4           */================================================================================
 
 function typeDatos() {
     const type1 = document.querySelector('.tipoDato1');
@@ -56,11 +56,11 @@ function typeDatos() {
     console.log(type1);
     console.log(type2);
 
-    type1.innerHTML = typeof registro1;
-    type2.innerHTML = typeof registro2;
+    type1.innerHTML = typeof (registro1);
+    type2.innerHTML = typeof (registro2);
 }
 
-//* Desarrollo del Problema 5 ==========================================================================================
+//* Desarrollo del Problema 5           */================================================================================
 
 function datosObjetos() {
     const objeto1 = document.querySelector('.obj1');
@@ -79,7 +79,7 @@ function datosObjetos() {
     objeto4.innerHTML = typeof obj.manos;
 }
 
-//* Desarrollo del Problema 6 ==========================================================================================
+//* Desarrollo del Problema 6           */================================================================================
 
 function sumaValor() {
     var numero;
