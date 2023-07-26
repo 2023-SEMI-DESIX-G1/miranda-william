@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./registro.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <title>ALWIRO Registro</title>
+</head>
+
+<body>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <form id="loginForm">
+    <a href="../login.html" title="Regresar a Login" class="previous round">&#8249;</a>
+    <div class="logo">
+      <img src="../img/logo3.png" alt="" style="height: 50px" />
+    </div>
+    <div class="logo">
+      <h1>Registro de usuario</h1>
+    </div>
+
+    <label id="labelemali" for="email">Correo:</label>
+    <input type="email" id="email" required />
+    <br />
+    <label id="labelpassword" for="password">Contraseña:</label>
+    <input type="password" id="password" required />
+    <br />
+    <section>
+      <div class="alert alert-2-secondary">
+        <h3 id="tituloR" class="alert-title"></h3>
+        <p id="respuestaR" class="alert-content"></p>
+      </div>
+    </section>
+    <button id="botonregistrar" type="submit">Registrar</button>
+  </form>
+
+  <script src="AppRegistro.js"></script>
+</body>
+
+</html>

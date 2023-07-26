@@ -1,0 +1,148 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>ALWIRO</title>
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="navTop">
+      <div class="navItem">
+        <img src="./img/logo3.png" alt="" style="height: 50px" />
+      </div>
+      <div class="navItem">
+        <!-- <div class="search">
+            <input type="text" placeholder="Search..." class="searchInput" />
+            <img
+              src="./img/search.png"
+              width="20"
+              height="20"
+              alt=""
+              class="searchIcon"
+            />
+          </div> -->
+      </div>
+      <div class="navItem">
+        <ul>
+          <li>
+            <img src="./img/profile.png" class="profile" />
+            <ul>
+              <li class="sub-item">
+                <span class="material-icons-outlined"> grid_view </span>
+                <p id="userID">Usuario</p>
+              </li>
+              <li class="sub-item" id="cerrarsesion">
+                <span class="material-icons-outlined"> logout </span>
+                <p>Cerrar sesión</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="navBottom">
+      <h3 class="menuItem">SAXOFON</h3>
+      <h3 class="menuItem">TROMPETA</h3>
+      <h3 class="menuItem">TROMBON</h3>
+      <h3 class="menuItem">PERCUSIÓN</h3>
+      <h3 class="menuItem">GUITARRA</h3>
+    </div>
+  </nav>
+  <div class="slider">
+    <div id="deslizadorid" class="sliderWrapper"></div>
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <img src="./img/shipping.png" alt="" class="featureIcon" />
+      <span class="featureTitle">ENVÍO GRATIS</span>
+      <span class="featureDesc">Envío gratuito a todo Panamá en todos los pedidos.</span>
+    </div>
+    <div class="feature">
+      <img class="featureIcon" src="./img/return.png" alt="" />
+      <span class="featureTitle">30 DÍAS DEVOLUCIÓN</span>
+      <span class="featureDesc">Devolución sin dudas y reembolso fácil en 14 días.</span>
+    </div>
+    <div class="feature">
+      <img class="featureIcon" src="./img/contact.png" alt="" />
+      <span class="featureTitle">CONTÁCTENOS!</span>
+      <span class="featureDesc">Manténgase en contacto a través de correo electrónico Alwiro@tienda.com o por whatsapp
+        al 61501642.</span>
+    </div>
+  </div>
+
+  <div class="product" id="product">
+    <img src="./img/saxofon1.png" alt="" class="productImg" />
+    <div class="productDetails">
+      <h1 class="productTitle"></h1>
+      <h2 class="productPrice"></h2>
+      <p class="productDesc"></p>
+
+      <button class="productButton">Comprar Ahora!</button>
+    </div>
+    <div class="payment">
+      <h1 class="payTitle">Información Personal</h1>
+      <label>Nombre y Apellido</label>
+      <input type="text" placeholder="Alba GArrido" class="payInput" />
+      <label>Número de teléfono</label>
+      <input type="text" placeholder="+507 61501642" class="payInput" />
+      <label>Dirección</label>
+      <input type="text" placeholder="La villa de los santos" class="payInput" />
+      <div class="cardIcons">
+        <img src="./img/paypal.png" width="120" alt="" class="cardIcon" />
+      </div>
+      <button class="payButton" id="CreatePayment">Pagar!</button>
+      <span class="close">X</span>
+    </div>
+  </div>
+  <div class="gallery">
+    <div class="galleryItem">
+      <h1 class="galleryTitle">¡Sé tú mismo!</h1>
+      <img src="img/saxofonista.jpg" alt="" class="galleryImg" />
+    </div>
+    <div class="galleryItem">
+      <img src="img/bandas.jpg" alt="" class="galleryImg" />
+      <h1 class="galleryTitle">La inspiración de cada día.</h1>
+    </div>
+    <div class="galleryItem">
+      <h1 class="galleryTitle">¡Hazlo!</h1>
+      <img src="img/bateria.jpeg" alt="" class="galleryImg" />
+    </div>
+  </div>
+  <div class="newSeason">
+    <div class="nsItem">
+      <img src="img/bateria2.jpeg" alt="" class="nsImg" />
+    </div>
+    <div class="nsItem">
+      <h3 class="nsTitleSm">NOVEDADES EN PRODUCTOS</h3>
+      <h1 class="nsTitle">Nuevos modelos</h1>
+      <h1 class="nsTitle">La Mejor Calidad</h1>
+      <a href="#nav">
+        <button class="nsButton">ELIGE EL TUYO</button>
+      </a>
+    </div>
+    <div class="nsItem">
+      <img src="img/bateria3.jpeg" alt="" class="nsImg" />
+    </div>
+  </div>
+  <footer>
+    <div class="footerRightMenu">
+      <span class="copyright">@Alwiro Dev. todos los derechos reservados. 2023.</span>
+    </div>
+    </div>
+  </footer>
+  <script src="./products.js"></script>
+  <script src="./App.js"></script>
+</body>
+
+</html>
